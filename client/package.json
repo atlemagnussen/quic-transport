@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "quic web transport",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve src"
+  },
+  "keywords": [
+    "web",
+    "quick",
+    "transport"
+  ],
+  "author": "atlemagnussen",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^12.0.1",
+    "sirv-cli": "^1.0.14"
+  }
+}
