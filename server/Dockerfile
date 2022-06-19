@@ -3,7 +3,9 @@ FROM node:16-bullseye
 
 ARG ENV
 
-RUN apt-get update -y && apt-get upgrade -y && apt-get install -y clang-9 cmake build-essential perl6 golang  ninja-build protobuf-compiler
+RUN apt-get update -y && apt-get upgrade -y 
+RUN apt install -y clang-11 cmake build-essential
+RUN apt install perl6 golang ninja-build protobuf-compiler
 
 WORKDIR /app
 COPY src/server.js ./
