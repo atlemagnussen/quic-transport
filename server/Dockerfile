@@ -10,7 +10,7 @@ RUN apt-get install -y perl6 golang ninja-build protobuf-compiler
 WORKDIR /app
 COPY src/server.js ./
 COPY src/testsuite.js ./
-COPY src/cert/. ./cert/
+COPY cert/. ./cert/
 
 WORKDIR /app/cert
 RUN ./generate_certs.sh
