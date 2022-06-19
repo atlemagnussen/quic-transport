@@ -1,4 +1,4 @@
-import { generateWebTransportCertificate} from "./cert.js"
+import { generateWebTransportCertificate} from "../src/cert.js"
 
 const attrs = [
     { shortName: 'C', value: 'DE' },
