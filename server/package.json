@@ -9,7 +9,8 @@
     },
     "type": "module",
     "scripts": {
-        "start": "node ./src/server.js"
+        "start": "node ./src/server.js",
+        "cert": "node ./cert/gen-cert.js"
     },
     "keywords": [
         "web",

@@ -22,8 +22,8 @@ const options = {
 
 async function run() {
 
-    const certificate = generateWebTransportCertificate(attrs, options)
-    const cert = certificate.cert, // unclear if it is the correct format
+    const certificate = await generateWebTransportCertificate(attrs, options)
+    const cert = certificate.cert // unclear if it is the correct format
     const privKey = certificate.private
 
     try {
