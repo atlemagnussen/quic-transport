@@ -15,8 +15,8 @@ COPY package*.json ./
 
 #COPY . .
 
-RUN npm install cmake-js -g
-RUN npm install --production=false --unsafe-perm
+RUN npm install cmake-js --location=global
+RUN npm install
 
 #debug
 #RUN --mount=type=secret,id=GH_TOKEN export GH_TOKEN=`cat /run/secrets/GH_TOKEN`; if [ "$ENV" = "debug" ] ; then npm install ; else  npm ci --only=production; fi
