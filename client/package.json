@@ -9,7 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "serve src"
+    "start": "serve src -l 4000"
   },
   "keywords": [
     "web",
